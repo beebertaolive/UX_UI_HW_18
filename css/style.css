@@ -1,9 +1,8 @@
-/*
+
 body {
     max-width: 1280px;
-    background-image: url(".images/flags_background.png");
 }
-*/
+
 .inline-block {
 display: inline-block;
 vertical-align: top;
@@ -14,6 +13,7 @@ outline: 1px solid red
     padding-left: 5vw;
     outline: 1px solid red
     }
+
 nav {
     width: 100%;
     padding: 1%;
@@ -22,17 +22,30 @@ nav {
     }
 ul {
     font-family: 'Audiowide', cursive;
-    width: 60vw;
+    width: 50vw;
     float: right;  
     text-align: right; 
     padding-right: 5vw;
     outline: 1px solid red
+}
+.bgImg {
+    background-image: url("https://d2v9ipibika81v.cloudfront.net/uploads/sites/32/2016/03/Flags-usbr-fade-e1456924857784.png");
+    padding: 5vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: ;
+    outline: 2px solid blue;
 }
 
 .heroImg {
     height: 600px;
     padding: 10px;
     outline: 1px solid red
+}
+
+.likeIcon {
+    width: 50px;
+    height: 50px;
 }
 
 .content {
@@ -91,7 +104,7 @@ h4  {
     padding: 3%;
     outline: 1px solid red
 }
-.workGrid {
+.projectsGrid {
     display: flex;
     margin: 0 auto;
     width: 90%;
@@ -112,11 +125,11 @@ h4  {
     outline: 1px solid red
 }
 
-.myWork {
+.myProjects {
     margin: 5vw;
     outline: 1px solid red;
 }
-.workGrid {
+.projectsGrid {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(1, 1fr);
@@ -154,7 +167,51 @@ h4  {
     width: 10vw;
     align-items: center;
 }
-/* jan 19 tutor*/
+/*  jan 19 tutor  */
 .linkedinIcon {
     cursor: pointer;
+}
+/* jan 25 solo hw 18 */
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .skill1 {
+        width: 100%;
+    }
+    .skill2 {
+        width: 100%;
+    }
+    .skill3 {
+        width: 100%;
+    }
+    .ex1 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "leftImg"
+        "rightContent";
+        outline: 1px solid red;
+    }
+    .ex2 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "leftImg2"
+        "rightContent2";
+        outline: 1px solid red;
+    }
+    .ex3 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "leftImg3"
+        "rightContent3";
+        outline: 1px solid red;
+    }
+
 }
